@@ -46,6 +46,7 @@ defmodule ScrivenerHtml.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
+    # Add a comment
     [
       {:scrivener, "~> 1.2 or ~> 2.0"},
       {:phoenix_html, "~> 2.2"},
