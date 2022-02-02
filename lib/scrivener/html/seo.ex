@@ -81,11 +81,11 @@ defmodule Scrivener.HTML.SEO do
 
   defp prev_header_link(conn, paginator, args, opts) do
     href = href(conn, paginator, args, opts, paginator.page_number - 1)
-    content_tag(:link, [], href: href, rel: rel(paginator, paginator.page_number - 1))
+    tag(:link, href: href, rel: rel(paginator, paginator.page_number - 1))
   end
 
   defp next_header_link(conn, paginator, args, opts) do
     href = href(conn, paginator, args, opts, paginator.page_number + 1)
-    content_tag(:link, [], href: href, rel: rel(paginator, paginator.page_number + 1))
+    tag(:link, href: href, rel: rel(paginator, paginator.page_number + 1))
   end
 end
