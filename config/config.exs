@@ -8,6 +8,8 @@ import Config
 # if you want to provide default values for your application for third-
 # party users, it should be done in your mix.exs file.
 
+config :phoenix, json_library: Jason
+
 # Sample configuration:
 #
 #     config :logger,
