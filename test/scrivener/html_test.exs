@@ -164,7 +164,10 @@ defmodule Scrivener.HTMLTest do
 
     test "does not include ellipsis on first page" do
       assert pages(1..6) ==
-               links_with_opts([total_pages: 8, page_number: 1], first: true, ellipsis: "&hellip;")
+               links_with_opts([total_pages: 8, page_number: 1],
+                 first: true,
+                 ellipsis: "&hellip;"
+               )
     end
 
     test "uses ellipsis only beyond <distance> of first page" do
